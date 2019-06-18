@@ -7,9 +7,48 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <div class = "container">
+      <div class = "row">
+        <div class = "col-sm-3">
+            <div class = "logo">
+              <strong>Z-Mobile</strong>
+            </div>
+        </div>
+        <div class = "col-md-3">
+          <%= link_to "Handsets", home_home_path(), :class => "btn btn-primary btn-md" %>
+          <%= link_to "Prepay", home_home_path(), :class => "btn btn-primary btn-md" %>
+          <%= link_to "Subscriptions", home_home_path(), :class => "btn btn-primary btn-md" %>
+        </div>
+        <div class = "col-sm-3">
+          <% if user_signed_in?%>
+            <%= link_to 'Shopping kart icon', home_home_path(), :class => "btn btn-priamry btn-md" %>
+          <% end %>
+        </div>
+        <div class = "col-sm-3">
+          <% if user_signed_in?%>
+            <%= button_to 'Log Out', destroy_user_session_path(), :method => :delete, class: "btn btn-danger btn-md" %>
+          <% else %>
+            <%= button_to 'Log In + Sign In', '/users/sign_in', class: "btn btn-success btn-md" %>
+          <% end %>
+        </div>
+      </div>
+    </div>
   </head>
 
   <body>
-    <%= yield %>
+    <div class = "bbody">
+      <div class = "flex-container">
+        <%= yield %>
+      </div>
+    </div>
   </body>
+  <footer>
+    <div class = "container">
+      <div class = "logo2">
+        <strong>Z mobile, address, phone number</strong>
+      </div>
+    </div>
+  </footer>
 </html>

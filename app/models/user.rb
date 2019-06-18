@@ -5,6 +5,7 @@ class User < ApplicationRecord
   has_many :orders
   has_many :product_orders, through: :orders
   has_many :products, through: :product_orders
+  validates :name, :lastname, presence: true
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 end

@@ -13,3 +13,29 @@
  *= require_tree .
  *= require_self
  */
+
+ .logo{
+     margin: auto;
+     border-color: blue;
+     border-width: 2px;
+     text-align: center;
+ }
+ .bbody{
+     overflow-y: scroll
+ }
+
+ .logo2{
+    margin: auto;
+    border-color: grey;
+    border-width: 2px;
+    text-align: center;
+    background-color: gray;
+    min-width: 100%;
+    position: relative;
+    
+}
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
