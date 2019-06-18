@@ -1,2 +1,10 @@
-<h1>Products#products</h1>
-<p>Find me in app/views/products/products.html.erb</p>
+<% @products.each do |e|%>
+    <%= link_to view_product_path(:product_id => e.id) do %>
+        <div class = "product">
+                <div>Model: <%= e.model %></div>
+                <div>Brand: <%= Brand.find(e.brand_id).name %></div>
+                <div>Price: <%= e.price %></div>
+                <div>Details: <%= e.resume %></div>
+        </div>
+    <% end %>
+<% end %>

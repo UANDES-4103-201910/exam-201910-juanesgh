@@ -17,13 +17,13 @@
             </div>
         </div>
         <div class = "col-md-3">
-          <%= link_to "Handsets", home_home_path(), :class => "btn btn-primary btn-md" %>
+          <%= link_to "Handsets", products_path(), :class => "btn btn-primary btn-md" %>
           <%= link_to "Prepay", home_home_path(), :class => "btn btn-primary btn-md" %>
           <%= link_to "Subscriptions", home_home_path(), :class => "btn btn-primary btn-md" %>
         </div>
         <div class = "col-sm-3">
           <% if user_signed_in?%>
-            <%= link_to 'Shopping kart icon', home_home_path(), :class => "btn btn-priamry btn-md" %>
+            <%= link_to 'Shopping kart icon', cart_path(), :class => "btn btn-priamry btn-md" %>
           <% end %>
         </div>
         <div class = "col-sm-3">

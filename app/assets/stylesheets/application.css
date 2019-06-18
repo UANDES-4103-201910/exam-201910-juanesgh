@@ -39,3 +39,15 @@
     flex-direction: column;
     text-align: center;
 }
+.product{
+    background-color: lightslategray;
+    border-width: 2px;
+    border-color: black;
+    text-emphasis-color: black;
+    margin: auto;
+}
+.flex-container2{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}

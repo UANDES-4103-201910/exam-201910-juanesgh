@@ -1,0 +1,23 @@
+<% if user_signed_in? %>
+    <div>
+        <%= link_to "Add to cart", add_path(:product_id => @id)%>    
+    </div>
+<% end %>
+<div>
+    <%= Brand.find(Product.find(@id).brand_id).name %>
+</div>
+<div>
+    <%= Product.find(@id).model %>
+</div>
+<div>
+    Capacity: <%= Variant.find(Product.find(@id).variant_id).storage %>
+</div>
+<div>
+    Color: <%= Variant.find(Product.find(@id).variant_id).color %>
+</div>
+<div>
+    <%= Product.find(@id).resume %>
+</div>
+<div>
+    <%= Product.find(@id).description %>
+</div>

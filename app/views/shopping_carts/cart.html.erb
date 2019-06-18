@@ -1,2 +1,6 @@
-<h1>ShoppingCarts#cart</h1>
-<p>Find me in app/views/shopping_carts/cart.html.erb</p>
+<% @data.each do |d|%>
+    <div>
+        <td>Model: <%= Product.find(d.to_i).model %></td>
+        <td>Proce: <%= Product.find(d.to_i).price %></td>
+    </div>
+<% end %>
