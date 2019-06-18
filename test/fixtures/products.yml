@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  brand_id: MyString
+  integer,: MyString
+  model: 
+  price: MyString
+  integer,: MyString
+  resume: MyString
+  string,: MyString
+  description: MyString
+  text,: MyString
+  variant_id: MyString
+  integer: MyString
+
+two:
+  brand_id: MyString
+  integer,: MyString
+  model: 
+  price: MyString
+  integer,: MyString
+  resume: MyString
+  string,: MyString
+  description: MyString
+  text,: MyString
+  variant_id: MyString
+  integer: MyString

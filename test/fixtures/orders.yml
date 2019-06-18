@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: MyString
+  integer,: MyString
+  billing_address: MyString
+  references,: MyString
+  shipping_address: MyString
+  references: MyString
+
+two:
+  user_id: MyString
+  integer,: MyString
+  billing_address: MyString
+  references,: MyString
+  shipping_address: MyString
+  references: MyString
